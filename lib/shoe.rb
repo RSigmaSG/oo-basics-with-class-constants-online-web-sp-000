@@ -10,7 +10,7 @@ class Shoe
       
       BRANDS << brand
     
-    elsif (!(BRANDS.includes(brand)))
+    elsif (!(BRANDS.include(brand)))
     
        BRANDS << brand
     
