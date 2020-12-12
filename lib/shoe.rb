@@ -3,8 +3,10 @@ class Shoe
   attr_reader :brand
 
   def initialize(brand)
-    @brand = brand
-    BRANDS << brand 
+    if(!BRAND.include(brand))
+      @brand = brand
+      BRANDS << brand 
+    #
   end
   
   BRANDS = []
@@ -12,13 +14,6 @@ class Shoe
   def cobble
     self.condition = "new"
     puts "Your shoe is as good as new!"
-  end
-
-  def brand=(brand)
-    #if(!BRAND.include(brand))
-      @brand = brand
-      
-    #end
   end
 
 end
