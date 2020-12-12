@@ -6,6 +6,7 @@ class Shoe
     if(!BRAND.include(brand))
       @brand = brand
       BRANDS << brand 
+    end
   end
   
   BRANDS = []
